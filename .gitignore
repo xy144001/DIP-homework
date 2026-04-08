@@ -3,8 +3,12 @@ __pycache__/
 
 02_DIPwithPyTorch/Pix2Pix/datasets/
 02_DIPwithPyTorch/Pix2Pix/maps500_checkpoints/
-02_DIPwithPyTorch/Pix2Pix/maps500_train_results/
-02_DIPwithPyTorch/Pix2Pix/maps500_test_results/
+02_DIPwithPyTorch/Pix2Pix/maps500_train_results/*
+!02_DIPwithPyTorch/Pix2Pix/maps500_train_results/epoch_15/
+!02_DIPwithPyTorch/Pix2Pix/maps500_train_results/epoch_15/result_*.png
+02_DIPwithPyTorch/Pix2Pix/maps500_test_results/*
+!02_DIPwithPyTorch/Pix2Pix/maps500_test_results/epoch_15/
+!02_DIPwithPyTorch/Pix2Pix/maps500_test_results/epoch_15/result_*.png
 02_DIPwithPyTorch/Pix2Pix/maps_checkpoints/
 02_DIPwithPyTorch/Pix2Pix/maps_train_results/
 02_DIPwithPyTorch/Pix2Pix/maps_val_results/

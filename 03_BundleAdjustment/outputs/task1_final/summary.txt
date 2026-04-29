@@ -1,0 +1,5 @@
+device: cpu
+steps: 600
+final_focal: 3021.243896
+final_reprojection_error: 8.339454
+output_dir: /home/xiongyi/DIP-homework/03_BundleAdjustment/outputs/task1_final

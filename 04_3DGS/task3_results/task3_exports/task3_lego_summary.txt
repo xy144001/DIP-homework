@@ -1,0 +1,25 @@
+Task 3 Comparison on server node1.ubuntu
+
+Dataset: lego (100 views, 400x400)
+Server: RTX 4090 x3
+
+Official 3DGS
+- Source path: /data/xy/lego_official_input
+- Output path: /data/xy/task3_runs/official_lego_30000
+- Training setting: 30000 iterations, --eval
+- Elapsed time: 290 s
+- Peak GPU memory: 1258 MiB
+- Eval test: L1 0.4619786097453191, PSNR 4.273085282399104
+- Eval train: L1 0.4633677899837494, PSNR 4.262130165100098
+- Rendered outputs: train/ours_30000 and test/ours_30000
+
+Simplified PyTorch 3DGS
+- Source path: /data/xy/task3_simple_data/lego
+- Output path: /data/xy/task3_runs/simple_lego_41ep
+- Training setting: 41 epochs
+- Elapsed time: 206 s
+- Peak GPU memory: 1352 MiB
+- Train-set eval over 100 views: L1 0.14541748978197575, PSNR 11.202098260422453
+- Checkpoints: checkpoint_000000.pt, checkpoint_000020.pt, checkpoint_000040.pt
+- Debug images: debug_images/epoch_0000.png, epoch_0010.png, epoch_0020.png, epoch_0030.png, epoch_0040.png
+- Debug video: debug_rendering.mp4
